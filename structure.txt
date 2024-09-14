@@ -1,0 +1,28 @@
+.
+├── app/
+│   ├── __init__.py
+│   ├── main.py
+│   ├── config/
+│   │   └── db.py               # Database connection
+│   ├── models/
+│   │   ├── user.py             # User model
+│   │   ├── class.py            # Class model
+│   │   ├── subject.py          # Subject model
+│   │   ├── assignment.py       # Class-Teacher assignment model
+│   │   ├── complaint.py        # Complaints model
+│   │   └── user_role.py        # UserRole model
+│   ├── routes/
+│   │   ├── auth.py             # Authentication routes
+│   │   ├── manager.py          # Manager routes
+│   │   ├── principal.py        # Principal routes
+│   │   ├── teacher.py          # Teacher routes
+│   │   ├── student.py          # Student routes
+│   │   ├── class.py            # Class management routes
+│   │   └── subject.py          # Subject management routes
+│   ├── schemas/
+│   │   └── user_schema.py      # Pydantic models for user requests
+│   ├── auth/
+│   │   ├── jwt_handler.py      # JWT generation and verification
+│   └── middleware/
+│       └── auth_middleware.py  # Middleware for JWT verification
+└── tests/                      # Unit tests
